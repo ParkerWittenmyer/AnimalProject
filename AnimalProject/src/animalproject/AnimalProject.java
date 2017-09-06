@@ -5,6 +5,8 @@
  */
 package animalproject;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author pwittenmyer
@@ -17,6 +19,15 @@ public class AnimalProject {
     public static void main(String[] args) {
         
         
+        
+        ArrayList Animals = new ArrayList<>();
+        ArrayList Birds = new ArrayList<>();
+        ArrayList Mammals = new ArrayList<>();
+        ArrayList Fishes = new ArrayList<>();
+        ArrayList Flyers = new ArrayList<>();
+        ArrayList Walkers = new ArrayList<>();
+        ArrayList Swimmers = new ArrayList<>();
+        ArrayList SoundMakers = new ArrayList<>();
         
     }
     
