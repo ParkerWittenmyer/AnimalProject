@@ -10,6 +10,6 @@ package animalproject;
  * @author pwittenmyer
  */
 public class BirdClass {
-    int wingspan;
+    double wingspan;
     
 }

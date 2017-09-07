@@ -10,5 +10,5 @@ package animalproject;
  * @author pwittenmyer
  */
 public class MammalClass {
-    int bodyTemp;
+    double bodyTemp;
 }
