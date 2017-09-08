@@ -9,12 +9,17 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class FishClass extends AnimalClass {
-    boolean isSaltWater;
-    
-    public FishClass(String name, boolean isSaltWater)
-    {
-        super(name);
-        this.isSaltWater = isSaltWater;
+public class BatClass extends MammalClass implements IFly{
+
+    public BatClass(String name, double bodyTemp) {
+        super(name, bodyTemp);
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Fly");    
+    }
+
+    
+    
 }

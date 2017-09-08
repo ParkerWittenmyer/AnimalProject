@@ -18,40 +18,27 @@ public class AnimalProject {
      */
     public static void main(String[] args) {
         
-        String name;
+        OstrichClass Ostrich = new OstrichClass("", 6.6); //In feet
         
-        /* Each animal has to actually have it's own class,
-        not each animal being an example of a class */
+        PenguinClass Penguin = new PenguinClass("", 2.5); //In feet
         
+        EagleClass Eagle = new EagleClass("", 7.5); //In feet
         
-        BirdClass Ostrich = new BirdClass();
-        Ostrich.wingspan = 6.6; //In feet
+        //~~~~~
         
-        BirdClass Penguin = new BirdClass();
-        Penguin.wingspan = 2.5; //In feet
+        DolphinClass Dolphin = new DolphinClass("", 97); //In fahrenheit
         
-        BirdClass Eagle = new BirdClass();
-        Eagle.wingspan = 7.5;
+        LionClass Lion = new LionClass("", 100.5); //In fahrenheit
         
+        BatClass Bat = new BatClass("", 102); //In fahrenheit
         
-        MammalClass Dolphin = new MammalClass();
-        Dolphin.bodyTemp = 97; //In fahrenheit
+        //~~~~~
         
-        MammalClass Lion = new MammalClass();
-        Lion.bodyTemp = 100.5;
+        SharkClass Shark = new SharkClass("", true); //Some species are, some aren't
         
-        MammalClass Bat = new MammalClass();
-        Bat.bodyTemp = 102;
+        BassClass Bass = new BassClass("", true); //Bass are both (anadromous)
         
-        
-        FishClass Shark = new FishClass();
-        Shark.isSaltWater = true; //Some species are, some aren't
-        
-        FishClass Bass = new FishClass();
-        Bass.isSaltWater = true; //Bass are both (anadromous)
-        
-        FishClass FlyingFish = new FishClass();
-        FlyingFish.isSaltWater = false;
+        FlyingFishClass FlyingFish = new FlyingFishClass("", false);
         
         
         
@@ -93,6 +80,7 @@ public class AnimalProject {
         Walkers.add(Lion);
         
         ArrayList Swimmers = new ArrayList<>();
+        Swimmers.add(Ostrich);
         Swimmers.add(Penguin);
         Swimmers.add(Dolphin);
         Swimmers.add(Shark);

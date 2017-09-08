@@ -9,12 +9,12 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class FishClass extends AnimalClass {
-    boolean isSaltWater;
+public abstract class AnimalClass {
+    String name;
     
-    public FishClass(String name, boolean isSaltWater)
+    public AnimalClass(String name)
     {
-        super(name);
-        this.isSaltWater = isSaltWater;
+        this.name = name;
     }
+    
 }

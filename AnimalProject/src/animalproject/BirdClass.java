@@ -9,7 +9,13 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class BirdClass {
+public class BirdClass extends AnimalClass{
     double wingspan;
+    
+    public BirdClass(String name, double wingspan)
+    {
+        super(name);
+        this.wingspan = wingspan;
+    }
     
 }

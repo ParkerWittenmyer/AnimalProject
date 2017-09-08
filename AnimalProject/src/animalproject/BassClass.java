@@ -9,12 +9,15 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class FishClass extends AnimalClass {
-    boolean isSaltWater;
-    
-    public FishClass(String name, boolean isSaltWater)
-    {
-        super(name);
-        this.isSaltWater = isSaltWater;
+public class BassClass extends FishClass implements ISwim{
+
+    public BassClass(String name, boolean isSaltWater) {
+        super(name, isSaltWater);
     }
+
+    @Override
+    public void swim() {
+        System.out.println("Swim");
+    }
+    
 }

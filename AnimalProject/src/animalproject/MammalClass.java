@@ -9,6 +9,12 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class MammalClass {
+public class MammalClass extends AnimalClass{
     double bodyTemp;
+    
+    public MammalClass(String name, double bodyTemp)
+    {
+        super(name);
+        this.bodyTemp = bodyTemp;
+    }
 }
