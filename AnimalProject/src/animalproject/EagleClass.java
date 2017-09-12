@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class EagleClass extends BirdClass implements IFly{
+public class EagleClass extends BirdClass implements IFly, IMakeSound{
     
     public EagleClass(String name, double wingspan) {
         super(name, wingspan);
@@ -18,6 +18,11 @@ public class EagleClass extends BirdClass implements IFly{
     @Override
     public void fly() {
         System.out.println("Fly");    
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Caw");
     }
 
     

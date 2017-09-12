@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class OstrichClass extends BirdClass implements IWalk, ISwim{
+public class OstrichClass extends BirdClass implements IWalk, ISwim, IMakeSound{
 
     public OstrichClass(String name, double wingspan) {
         super(name, wingspan);
@@ -23,6 +23,11 @@ public class OstrichClass extends BirdClass implements IWalk, ISwim{
     @Override
     public void swim() {
         System.out.println("Swim");
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Woo");
     }
     
 }

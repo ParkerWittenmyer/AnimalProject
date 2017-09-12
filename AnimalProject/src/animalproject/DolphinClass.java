@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class DolphinClass extends MammalClass implements ISwim{
+public class DolphinClass extends MammalClass implements ISwim, IMakeSound{
 
     public DolphinClass(String name, double bodyTemp) {
         super(name, bodyTemp);
@@ -18,6 +18,11 @@ public class DolphinClass extends MammalClass implements ISwim{
     @Override
     public void swim() {
         System.out.println("Swim");    
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Chirp");
     }
     
 }

@@ -15,6 +15,14 @@ public class FishClass extends AnimalClass {
     public FishClass(String name, boolean isSaltWater)
     {
         super(name);
+    }
+
+    public boolean getIsSaltWater() {
+        return isSaltWater;
+    }
+
+    public void setIsSaltWater(boolean isSaltWater) {
         this.isSaltWater = isSaltWater;
     }
+    
 }

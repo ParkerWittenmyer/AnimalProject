@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class LionClass extends MammalClass implements IWalk{
+public class LionClass extends MammalClass implements IWalk, IMakeSound{
 
     public LionClass(String name, double bodyTemp) {
         super(name, bodyTemp);
@@ -18,6 +18,11 @@ public class LionClass extends MammalClass implements IWalk{
     @Override
     public void walk() {
         System.out.println("Walk");    
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Roar");
     }
 
     

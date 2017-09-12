@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class PenguinClass extends BirdClass implements IWalk, ISwim{
+public class PenguinClass extends BirdClass implements IWalk, ISwim, IMakeSound{
 
     public PenguinClass(String name, double wingspan) {
         super(name, wingspan);
@@ -23,6 +23,11 @@ public class PenguinClass extends BirdClass implements IWalk, ISwim{
     @Override
     public void swim() {
         System.out.println("Swim");
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Chirp");
     }
     
 }

@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author pwittenmyer
  */
-public class BatClass extends MammalClass implements IFly{
+public class BatClass extends MammalClass implements IFly, IMakeSound{
 
     public BatClass(String name, double bodyTemp) {
         super(name, bodyTemp);
@@ -18,6 +18,11 @@ public class BatClass extends MammalClass implements IFly{
     @Override
     public void fly() {
         System.out.println("Fly");    
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Squeak");
     }
 
     
